@@ -3,7 +3,7 @@ import os
 from flask import (Flask, redirect, render_template, request,
                    send_from_directory, url_for)
 
-from langchain_openai import AzureOpenAI
+from langchain_openai import AzureChatOpenAI
 
 app = Flask(__name__)
 azure_endpoint = os.environ['AZURE_OPENAI_ENDPOINT']
